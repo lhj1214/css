@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	#wrap{width: 600px; height:800px; margin:0 auto;}
+	header{
+	height: 15%; display:flex; flex-flow: row;
+	}
+	.top{ 
+	position: relative; left:0px; top:10px;
+	box-shadow: 10px 10px 10px 1px black;
+	}
+	span{
+	position: relative; left:80px; top:30px;
+	font-weight:bold; font-style:italic; font-size:24pt; }
+	ul{ background-color: rgba(127,127,127,127); padding:5px 50px ;}
+	li{ list-style: none; display: inline; padding-right: 50px; color:white;}
+	nav{border:1px solid black;}
+	section{width:100%; display:flex; flex-flow: row; padding: 0px;}
+	.img{ display:flex; flex-flow:column; width:20%; margin: 5px; }
+	.main{ width: 40%; padding-left: 5px; }
+	.input{ display: flex; flex-flow:column;}
+	.left{ width: 40%; display:flex; flex-flow:column; }
+	.login{ display:flex; flex-flow: row; padding-left: 70px; }
+	.food{ display:flex; flex-flow: column;	width: 100%; padding-left: 5px;}
+	.mini{ display: flex; flex-flow: row; padding:0px;width: 100%; margin:5px;}
+	.member{ margin-left: 5px; font-size:11pt; font-style: normal; }
+</style>
+</head>
+<body>
+<div id="wrap">
+	<header>
+		<img class="top" src="quiz07/맛집.png" width="100" height="100">
+		<span>맛집탐방 이야기 ^^</span>
+	</header>
+	<nav>
+		<ul>
+			<li>HOME</li><li>게시판</li><li>내정보</li>
+		</ul>
+	</nav>
+	<section>
+		<article class="img">
+		<div><img src="quiz07/l_정우성.jpg" width="100%" height="120"></div>
+		<div><img src="quiz07/맛집탐방.jpeg" width="100%" height="120"></div>
+		</article>
+		<article class="main">
+		<p><h3> < 오늘의 맛집 > </h3></p>
+		<p>오늘 방문한 곳은 맛있는 음식이 나오는 집.<br><br>
+		오늘 방문한 곳은 맛있는 음식이 나오는 집.<br><br>오늘 방문한 곳은 맛있는 음식이 나오는 집.<br>
+		</article>
+		<section class="left">
+		<div class="login">
+			<div class="input">
+				<input type="text" style="width: 100px; height:20px;">
+				<input type="text" style="width: 100px; height:20px;">	
+			</div>
+			<input type="submit" value="로그인" style="height:51px; float:right;">
+		</div>
+		<div class="food">
+			<div class="mini"> 
+				<img src="quiz07/맛집01.jpg" width="50" height="50">
+				<div class="member"><a href="#">회원가입</a> / <a href="#">ID/PW찾기</a></div>				
+			</div>
+			<div class="mini"> 
+				<img src="quiz07/맛집02.jpg" width="50" height="50">
+				<div class="member" align="center"><h3>오늘의 뉴스</h3></div>
+			</div>
+			<div class="mini"> 
+				<img src="quiz07/맛집03.jpg" width="50" height="50">
+				<div class="member">날씨:-32도<br>미세먼지:농도심함<br>운세:누구보다 좋음</div>
+			</div>
+		</div>
+		</section>
+	</section>
+	<hr>
+	<footer>
+		CARE LAB Copyright AllRights Reserved 1999
+	</footer>
+</div>
+</body>
+</html>

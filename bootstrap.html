@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="bootstrap-3.3.2-dist/bootstrap-3.3.2-dist/css/bootstrap.min.css">
+<style type="text/css">
+/* 모바일 버전용 */
+	#wrap{ display: flex; flex-flow: column; margin: 0 auto; 
+		width:80%; max-width:900px; }
+	.header{ order:1; display: flex; flex-flow: row; align-items: center;}
+	.header img{ width:10%; height:10%; }
+	.title{ font-size: 1.5em; }
+	
+/* pc버전에서 보여질 코드 */
+	@media all and (min-width:900px){
+		#wrap{ position:relative; width:80%; }
+		.header{ background-color: pink;}
+		.header img{ box-shadow: 5px 5px 10px 1px black; }
+		.title{ font-size: 2.0em; margin: 0 20%;}
+	}
+</style>
+</head>
+<body>
+<div id="wrap">
+	<header class="header">
+			<img src="resources/images/quiz07/맛집.png" width=100 height=100>
+			<h1 class="title"><i>맛집탐방 이야기^^</i></h1>
+			
+	</header>
+	<section class="section"></section>
+	<footer class="footer"></footer>
+</div>
+</body>
+</html>
